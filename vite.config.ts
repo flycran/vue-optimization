@@ -6,7 +6,9 @@ import pages from 'vite-plugin-pages'
 // https://vite.dev/config/
 export default defineConfig({
   build: {
-    minify: false,
+    rollupOptions: {
+      treeshake: false
+    }
   },
   resolve: {
     alias: [
